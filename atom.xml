@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-28T03:33:28.284Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Alvin Wang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flutter 开发手册</title>
+    <link href="http://yoursite.com/2020/04/16/flutter-%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C/"/>
+    <id>http://yoursite.com/2020/04/16/flutter-%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C/</id>
+    <published>2020-04-16T02:48:18.000Z</published>
+    <updated>2020-04-28T03:33:28.284Z</updated>
+    
+    <content type="html"><![CDATA[<p>fluter 环境搭建 文档: <a href="http://www.imooc.com/article/284328" target="_blank" rel="noopener">http://www.imooc.com/article/284328</a></p><p>启动项目<br>1、open -a Simulator // 启动模拟器<br>2、flutter run</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;fluter 环境搭建 文档: &lt;a href=&quot;http://www.imooc.com/article/284328&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.imooc.com/article/284328&lt;/a&gt;&lt;/p&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git 常用操作备忘录</title>
+    <link href="http://yoursite.com/2020/04/15/git-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    <id>http://yoursite.com/2020/04/15/git-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%A4%87%E5%BF%98%E5%BD%95/</id>
+    <published>2020-04-15T07:47:17.000Z</published>
+    <updated>2020-04-15T13:04:54.475Z</updated>
+    
+    <content type="html"><![CDATA[<p>场景一: fork其他人项目更新代码<br>git remote -v<br>git remote add upstream <a href="mailto:git@github.com">git@github.com</a>:xxx/xxx.git  // 添加远程仓库<br>git remote remove upstream // 删除远程仓库<br>git fetch upstream  // 从源仓库更新同步代码<br>git merge upstream/master  // 合并到本地代码<br>git push </p><p>场景二: 线上master分支回滚代码<br>方法一: 未设置保护分支<br>1、git reset –hard commitid<br>2、git push -f</p><p>方法二: 设置了保护分支<br>1、git revert –no-commit commitid (一般用于回滚当前的commitid)<br>补充: git revert HEAD~3^..HEAD (一般用于回滚多个commitid)<br>2、git push</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;场景一: fork其他人项目更新代码&lt;br&gt;git remote -v&lt;br&gt;git remote add upstream &lt;a href=&quot;mailto:git@github.com&quot;&gt;git@github.com&lt;/a&gt;:xxx/xxx.git  // 添加远程仓库&lt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux technology and practice</title>
+    <link href="http://yoursite.com/2020/04/13/Linux-technology-and-practice/"/>
+    <id>http://yoursite.com/2020/04/13/Linux-technology-and-practice/</id>
+    <published>2020-04-13T14:19:49.000Z</published>
+    <updated>2020-04-15T14:17:01.918Z</updated>
+    
+    <content type="html"><![CDATA[<p>Linux 常用指令大全</p><p>Vim的标准和高级操作<br>交互模式下<br>1、0: 移动到行首; $ 移动到行尾<br>2、w: 一个单词一个单词地移动<br>3、:q! 强制退出; :wq/:x 保存并退出<br>4、x: 删除字符 (数字+x 可删除多个字符)<br>d: 删除单词; dd: 删除行de; dw 删除单词<br>d0: 删除到行首; d$: 删除到行末<br>5、yy: 复制行到内存中; yw: 复制单词<br>6、p: 粘贴 (数字+p 可粘贴多次)<br>7、r: 替换; R 进入替换模式(Esc可退出)<br>8、u: 撤销修改; ctrl + r 取消撤销的内容<br>9、g: 跳到指定行 (7G/7gg)<br>10、/: 查找 (n下一个, N上一个)<br>11、:s/旧字符/新字符[/g]: 查找替换<br>12、/r 合并文件<br>13: :sp 分割屏幕; :vsp 垂直分屏<br>移动下一个视口 ctrl + w<br>14、v、V、ctrl+v 进入可视模式</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Linux 常用指令大全&lt;/p&gt;
+&lt;p&gt;Vim的标准和高级操作&lt;br&gt;交互模式下&lt;br&gt;1、0: 移动到行首; $ 移动到行尾&lt;br&gt;2、w: 一个单词一个单词地移动&lt;br&gt;3、:q! 强制退出; :wq/:x 保存并退出&lt;br&gt;4、x: 删除字符 (数字+x 可删除多个字
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/04/13/hello-world/"/>
+    <id>http://yoursite.com/2020/04/13/hello-world/</id>
+    <published>2020-04-13T11:06:56.963Z</published>
+    <updated>2020-04-13T11:06:56.963Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
