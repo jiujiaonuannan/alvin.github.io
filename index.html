@@ -76,6 +76,75 @@
     
     
     
+    <article id="post-面试圣金" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/05/13/%E9%9D%A2%E8%AF%95%E5%9C%A3%E9%87%91/"
+    >面试圣金</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/05/13/%E9%9D%A2%E8%AF%95%E5%9C%A3%E9%87%91/" class="article-date">
+  <time datetime="2020-05-13T11:19:12.000Z" itemprop="datePublished">2020-05-13</time>
+</a>
+      
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h3 id="1、CSS-中解决浮动中高度塌陷的方案有哪些？"><a href="#1、CSS-中解决浮动中高度塌陷的方案有哪些？" class="headerlink" title="1、CSS 中解决浮动中高度塌陷的方案有哪些？"></a>1、CSS 中解决浮动中高度塌陷的方案有哪些？</h3><p>可以先概括解决高度塌陷问题的两种类型：clear 属性 和 BFC 法<br>BFC定义: 具有 BFC 特性的元素可以看作是隔离了的独立容器，容器里面的元素不会在布局上影响到外面的元素，并且 BFC 具有普通容器所没有的一些特性。<br>然后可以介绍两种类型的具体方案：<br>  1、追加元素并设置 clear 属性<br>  2、使用 CSS 样式插入伪元素</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.parent::after &#123;</span><br><span class="line">  content: <span class="string">''</span>,</span><br><span class="line">  height: 0;</span><br><span class="line">  clear: both;</span><br><span class="line">  display: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>可能追加的面试题:<br>  1、高度塌陷产生的原因是什么？<br>  2、clear 属性清除浮动的原理是什么？<br>  3、采用 BFC 解决高度塌陷和clear 属性清除浮动相比的优势是什么？</p>
+
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+  
+  
+
+</article>
+    
     <article id="post-flutter-开发手册" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -438,7 +507,7 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
+      <a class="nav-item-link" href="/about">关于我</a>
     </li>
     
   </ul>

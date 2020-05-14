@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Linux technology and practice</title>
-    <url>/2020/04/13/Linux-technology-and-practice/</url>
-    <content><![CDATA[<p>Linux 常用指令大全</p>
-<p>Vim的标准和高级操作<br>交互模式下<br>1、0: 移动到行首; $ 移动到行尾<br>2、w: 一个单词一个单词地移动<br>3、:q! 强制退出; :wq/:x 保存并退出<br>4、x: 删除字符 (数字+x 可删除多个字符)<br>d: 删除单词; dd: 删除行de; dw 删除单词<br>d0: 删除到行首; d$: 删除到行末<br>5、yy: 复制行到内存中; yw: 复制单词<br>6、p: 粘贴 (数字+p 可粘贴多次)<br>7、r: 替换; R 进入替换模式(Esc可退出)<br>8、u: 撤销修改; ctrl + r 取消撤销的内容<br>9、g: 跳到指定行 (7G/7gg)<br>10、/: 查找 (n下一个, N上一个)<br>11、:s/旧字符/新字符[/g]: 查找替换<br>12、/r 合并文件<br>13: :sp 分割屏幕; :vsp 垂直分屏<br>移动下一个视口 ctrl + w<br>14、v、V、ctrl+v 进入可视模式</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>flutter 开发手册</title>
-    <url>/2020/04/16/flutter-%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C/</url>
-    <content><![CDATA[<p>fluter 环境搭建 文档: <a href="http://www.imooc.com/article/284328" target="_blank" rel="noopener">http://www.imooc.com/article/284328</a></p>
-<p>启动项目<br>1、open -a Simulator // 启动模拟器<br>2、flutter run</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git 常用操作备忘录</title>
-    <url>/2020/04/15/git-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%A4%87%E5%BF%98%E5%BD%95/</url>
-    <content><![CDATA[<p>场景一: fork其他人项目更新代码<br>git remote -v<br>git remote add upstream <a href="mailto:git@github.com">git@github.com</a>:xxx/xxx.git  // 添加远程仓库<br>git remote remove upstream // 删除远程仓库<br>git fetch upstream  // 从源仓库更新同步代码<br>git merge upstream/master  // 合并到本地代码<br>git push </p>
-<p>场景二: 线上master分支回滚代码<br>方法一: 未设置保护分支<br>1、git reset –hard commitid<br>2、git push -f</p>
-<p>方法二: 设置了保护分支<br>1、git revert –no-commit commitid (一般用于回滚当前的commitid)<br>补充: git revert HEAD~3^..HEAD (一般用于回滚多个commitid)<br>2、git push</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hexo 操作指南</title>
     <url>/2020/04/13/hexo%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -38,6 +16,37 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>面试圣金</title>
+    <url>/2020/05/13/%E9%9D%A2%E8%AF%95%E5%9C%A3%E9%87%91/</url>
+    <content><![CDATA[<h3 id="1、CSS-中解决浮动中高度塌陷的方案有哪些？"><a href="#1、CSS-中解决浮动中高度塌陷的方案有哪些？" class="headerlink" title="1、CSS 中解决浮动中高度塌陷的方案有哪些？"></a>1、CSS 中解决浮动中高度塌陷的方案有哪些？</h3><p>可以先概括解决高度塌陷问题的两种类型：clear 属性 和 BFC 法<br>BFC定义: 具有 BFC 特性的元素可以看作是隔离了的独立容器，容器里面的元素不会在布局上影响到外面的元素，并且 BFC 具有普通容器所没有的一些特性。<br>然后可以介绍两种类型的具体方案：<br>  1、追加元素并设置 clear 属性<br>  2、使用 CSS 样式插入伪元素</p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.parent::after &#123;</span><br><span class="line">  content: <span class="string">''</span>,</span><br><span class="line">  height: 0;</span><br><span class="line">  clear: both;</span><br><span class="line">  display: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>可能追加的面试题:<br>  1、高度塌陷产生的原因是什么？<br>  2、clear 属性清除浮动的原理是什么？<br>  3、采用 BFC 解决高度塌陷和clear 属性清除浮动相比的优势是什么？</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>flutter 开发手册</title>
+    <url>/2020/04/16/flutter-%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C/</url>
+    <content><![CDATA[<p>fluter 环境搭建 文档: <a href="http://www.imooc.com/article/284328" target="_blank" rel="noopener">http://www.imooc.com/article/284328</a></p>
+<p>启动项目<br>1、open -a Simulator // 启动模拟器<br>2、flutter run</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Linux technology and practice</title>
+    <url>/2020/04/13/Linux-technology-and-practice/</url>
+    <content><![CDATA[<p>Linux 常用指令大全</p>
+<p>Vim的标准和高级操作<br>交互模式下<br>1、0: 移动到行首; $ 移动到行尾<br>2、w: 一个单词一个单词地移动<br>3、:q! 强制退出; :wq/:x 保存并退出<br>4、x: 删除字符 (数字+x 可删除多个字符)<br>d: 删除单词; dd: 删除行de; dw 删除单词<br>d0: 删除到行首; d$: 删除到行末<br>5、yy: 复制行到内存中; yw: 复制单词<br>6、p: 粘贴 (数字+p 可粘贴多次)<br>7、r: 替换; R 进入替换模式(Esc可退出)<br>8、u: 撤销修改; ctrl + r 取消撤销的内容<br>9、g: 跳到指定行 (7G/7gg)<br>10、/: 查找 (n下一个, N上一个)<br>11、:s/旧字符/新字符[/g]: 查找替换<br>12、/r 合并文件<br>13: :sp 分割屏幕; :vsp 垂直分屏<br>移动下一个视口 ctrl + w<br>14、v、V、ctrl+v 进入可视模式</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git 常用操作备忘录</title>
+    <url>/2020/04/15/git-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%A4%87%E5%BF%98%E5%BD%95/</url>
+    <content><![CDATA[<p>场景一: fork其他人项目更新代码<br>git remote -v<br>git remote add upstream <a href="mailto:git@github.com">git@github.com</a>:xxx/xxx.git  // 添加远程仓库<br>git remote remove upstream // 删除远程仓库<br>git fetch upstream  // 从源仓库更新同步代码<br>git merge upstream/master  // 合并到本地代码<br>git push </p>
+<p>场景二: 线上master分支回滚代码<br>方法一: 未设置保护分支<br>1、git reset –hard commitid<br>2、git push -f</p>
+<p>方法二: 设置了保护分支<br>1、git revert –no-commit commitid (一般用于回滚当前的commitid)<br>补充: git revert HEAD~3^..HEAD (一般用于回滚多个commitid)<br>2、git push</p>
 ]]></content>
   </entry>
 </search>
